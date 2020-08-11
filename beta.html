@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css"
+    href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.0/slate/bootstrap.min.css">
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({ tex2jax: { inlineMath: [['$','$'], ['\\(','\\)']] } });
+  </script>
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({ TeX: { extensions: ["autobold.js", "AMSsymbols.js"] } });
+  </script>
+  <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  </script>
+  <title>Beta Distribution</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand navbar-dark bg-dark">
+    <div class="">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="models.html">Models</a></li>
+        <li class="nav-item"><a class="nav-link" href="studentadvice.html">Student Advice</a></li>
+        <li class="nav-item"><a class="nav-link" href="disclosure.html">Disclosures</a></li>
+      </ul>
+    </div>
+  </nav>
+  <br />
+  <main role="main" class="container">
+    <table>
+      <tr>
+        <thead>
+          <h4>Beta Distribution</h4>
+        </thead>
+      </tr>
+      <tr>
+        <td>Models:</td>
+        <td>Probability for proportions; flexible model for situations where possible values are in a a range (generally
+          0 to 1).</td>
+      </tr>
+      <tr>
+        <td>Example:</td>
+        <td>The percentage of the day that will be sunny.</td>
+      </tr>
+      <tr>
+        <td>Notation:</td>
+        <td>X ~ Beta\((\alpha, \beta) \)</td>
+      </tr>
+      <tr>
+        <td>Parameters:</td>
+        <td>\(\alpha, \beta\) are shape parameters, both must be greater than 0. Sometimes additional parameters a and b
+          are included if the range of values modeled is from a to be rather than 0 to 1.</td>
+      </tr>
+      <tr>
+        <td>Possible values:</td>
+        <td>All values between 0 and 1 (or a and b if additional parameters are added)</td>
+      </tr>
+      <tr>
+        <td>Mean and variance:</td>
+        <td>E(X) = \(\alpha \over \alpha+\beta\), Var(X) = \(\alpha * \beta \over (\alpha+\beta)^2*(\alpha+\beta+1)\)
+        </td>
+      </tr>
+    </table>
+
+    <br /><br />
+    <h5>Beta distribution is the representation of all the possible values of a probability when we don't know what that
+      probability is.</h4>
+    <br />
+    <p>References:</p>
+    <p><a href="http://varianceexplained.org/statistics/beta_distribution_and_baseball">Example using baseball
+        stats<br />
+        <a href="https://www.itl.nist.gov/div898/handbook/eda/section3/eda366h.htm">NIST Engineering Statistics
+          Handbook</a>
+    </p>
+    <br />
+    <iframe width="420" height="315" src="https://www.youtube.com/embed/KIXFlK1dajE?controls=0"></iframe>
+  </main>
+</body>
+
+</html>

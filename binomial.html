@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css"
+    href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.0/slate/bootstrap.min.css">
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({ tex2jax: { inlineMath: [['$','$'], ['\\(','\\)']] } });
+  </script>
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({ TeX: { extensions: ["autobold.js", "AMSsymbols.js"] } });
+  </script>
+  <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  </script>
+  <title>Binomial Distribution</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand navbar-dark bg-dark">
+    <div class="">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="models.html">Models</a></li>
+        <li class="nav-item"><a class="nav-link" href="studentadvice.html">Student Advice</a></li>
+        <li class="nav-item"><a class="nav-link" href="disclosure.html">Disclosures</a></li>
+      </ul>
+    </div>
+  </nav>
+  <br />
+  <main role="main" class="container">
+    <p></p>
+    <table class="table table-sm table-striped table-bordered table-dark">
+      <tr>
+        <td>Name</td>
+        <td>Binomial Distribution</td>
+      </tr>
+      <tr>
+        <td>Definition</td>
+        <td>How many times an event occurs in a certain number of trials.</td>
+      </tr>
+      <tr>
+        <td>Formula</td>
+        <td>\(n \choose k \) \(p^k(1-p)^{n-k}\)</td>
+      </tr>
+      <tr>
+        <td>Input Values</td>
+        <td><strong>n:</strong> Number of trials, <strong>p:</strong> Probability of the event occuring on each trial,
+          <strong>k:</strong> The number of successes</td>
+      </tr>
+      <tr>
+        <td>Output values</td>
+        <td>Probability of receiving a specific outcome expressed as a fraction or percentage.</td>
+      </tr>
+      <tr>
+        <td>Interpretation</td>
+        <td>Written P(x) which means "the probability of x".  </td>
+      </tr>
+      <tr>
+        <td>Mean and variance:</td>
+        <td>
+          <strong>\(\mu\)</strong> = E(X) = n * p,
+          <strong>\(\sigma^2\)</strong> = Var(X) = n * p * (1 - p)
+        </td>
+      </tr>
+    </table>
+    <br /><br />
+    <h2>References:</h2>
+    <p><a style="text-decoration: underline;"
+        href="https://www.statisticshowto.com/probability-and-statistics/binomial-theorem/binomial-distribution-formula/">Examples
+        on StatisticsHowTo.com</a><br />
+      <a style="text-decoration: underline;"
+        href="https://www.khanacademy.org/math/ap-statistics/random-variables-ap/binomial-random-variable/v/probability-of-making-2-shots-in-6-attempts">Khan
+        Academy Example</a>
+    </p>
+    <iframe width="400" height="250" src="https://www.youtube.com/embed/WWv0RUxDfbs" frameborder="0"
+      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </main>
+</body>
+
+</html>
