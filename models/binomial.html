@@ -4,31 +4,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" type="text/css"
-    href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.0/slate/bootstrap.min.css">
-  <script type="text/x-mathjax-config">
-    MathJax.Hub.Config({ tex2jax: { inlineMath: [['$','$'], ['\\(','\\)']] } });
-  </script>
-  <script type="text/x-mathjax-config">
-    MathJax.Hub.Config({ TeX: { extensions: ["autobold.js", "AMSsymbols.js"] } });
-  </script>
-  <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-  </script>
+  <script src="//code.jquery.com/jquery.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.0/slate/bootstrap.min.css">
+  <script type="text/x-mathjax-config">MathJax.Hub.Config({ tex2jax: { inlineMath: [['$','$'], ['\\(','\\)']] } });</script>
+  <script type="text/x-mathjax-config">MathJax.Hub.Config({ TeX: { extensions: ["autobold.js", "AMSsymbols.js"] } });</script>
+  <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  <script>$.get("templates/navbar.html", function(data){$("#nav-placeholder").replaceWith(data);});</script>
   <title>Binomial Distribution</title>
 </head>
 
 <body>
-  <nav class="navbar navbar-expand navbar-dark bg-dark">
-    <div class="">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-        <li class="nav-item"><a class="nav-link" href="models.html">Models</a></li>
-        <li class="nav-item"><a class="nav-link" href="studentadvice.html">Student Advice</a></li>
-        <li class="nav-item"><a class="nav-link" href="disclosure.html">Disclosures</a></li>
-      </ul>
-    </div>
-  </nav>
+	<div id="nav-placeholder"></div>
+
   <br />
+
   <main role="main" class="container">
     <p></p>
     <table class="table table-sm table-striped table-bordered table-dark">

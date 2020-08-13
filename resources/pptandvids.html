@@ -1,46 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" type="text/css" href="/css/page.css">
-	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.0/slate/bootstrap.min.css"
-	/>
-	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-	 crossorigin="anonymous">
-
-	</script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-	 crossorigin="anonymous">
-
-	</script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-	 crossorigin="anonymous">
-
-	</script>
+<head id="header">
+  <script src="//code.jquery.com/jquery.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.0/slate/bootstrap.min.css">
+  <script>
+    $.get("templates/header.html", function(data){
+      $("#header").replaceWith(data);
+    });  
+  </script>
 	<title>Resource Pages</title>
 </head>
 
 <body>
-	<nav class="navbar navbar-expand navbar-dark bg-dark">
-		<div class="">
-			<ul class="navbar-nav mr-auto">
-				<li class="nav-item">
-					<a class="nav-link" href="../index.html">Home</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="../models.html">Models</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link active" href="../resource.html">Student Resources</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="../disclosure.html">Disclosures</a>
-				</li>
-			</ul>
-		</div>
-	</nav>
+	<div id="nav-placeholder"></div>
 
 	<br />
 
@@ -58,7 +31,7 @@
           <td><a style="text-decoration: underline;"
               href="https://westerngovernorsuniversity-my.sharepoint.com/:p:/g/personal/william_sewell_wgu_edu/EfhZbYtvDcpDnd8LNSwLDGAB8bwxrsEkFQzJDHOJkz4KZA?e=NLcHtv">Powerpoint</a>
             / <a style="text-decoration: underline;"
-              href="https://wgu.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=423af52f-3d59-4200-ac40-ab560167a151">Video</a>
+              href="https://wgu.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=423af52f-3d59-4200-ac40-ab560167a151" target="myFrame">Video</a>
           </td>
         </tr>
         <tr>
@@ -66,7 +39,7 @@
           <td><a style="text-decoration: underline;"
               href="https://westerngovernorsuniversity-my.sharepoint.com/:p:/g/personal/william_sewell_wgu_edu/EUQUBQlHQZxCgPK1a9NmxxEBjmUPeVLIS8cv-IyK9VTdcQ?e=cn2K78">Powerpoint</a>
             / <a style="text-decoration: underline;"
-              href="https://westerngovernorsuniversity-my.sharepoint.com/:p:/g/personal/william_sewell_wgu_edu/EUQUBQlHQZxCgPK1a9NmxxEBjmUPeVLIS8cv-IyK9VTdcQ?e=cn2K78">Video</a>
+              href="https://westerngovernorsuniversity-my.sharepoint.com/:p:/g/personal/william_sewell_wgu_edu/EUQUBQlHQZxCgPK1a9NmxxEBjmUPeVLIS8cv-IyK9VTdcQ?e=cn2K78" target="myFrame">Video</a>
           </td>
         </tr>
         <tr>
@@ -74,7 +47,7 @@
           <td><a style="text-decoration: underline;"
               href="https://westerngovernorsuniversity-my.sharepoint.com/:p:/g/personal/william_sewell_wgu_edu/ESXu5K_xR-1KkTVEUIUYNmMBMuF3L0Y_CCrV86cePz3kiQ?e=ArDRf7">Powerpoint</a>
             / <a style="text-decoration: underline;"
-              href="https://wgu.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=8154153e-e3b2-4951-99c1-ab8700035862">Video</a>
+              href="https://wgu.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=8154153e-e3b2-4951-99c1-ab8700035862" target="myFrame">Video</a>
           </td>
         </tr>
         <tr>
@@ -82,7 +55,7 @@
           <td><a style="text-decoration: underline;"
               href="https://wgu.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=17f7dd15-e0f2-4ed2-bfb9-aba90188e891">Powerpoint</a>
             / <a style="text-decoration: underline;"
-              href="https://wgu.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=17f7dd15-e0f2-4ed2-bfb9-aba90188e891">Video</a>
+              href="https://wgu.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=17f7dd15-e0f2-4ed2-bfb9-aba90188e891" target="myFrame">Video</a>
           </td>
         </tr>
         <tr>
@@ -90,7 +63,7 @@
           <td><a style="text-decoration: underline;"
               href="https://westerngovernorsuniversity-my.sharepoint.com/:p:/g/personal/william_sewell_wgu_edu/EU_nincAlqFHuDMpdgKPSVMB6m51aupN2-a18rzYbYlCAA?e=bqGRSa">Powerpoint</a>
             / <a style="text-decoration: underline;"
-              href="https://wgu.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=11fb791d-8c05-4140-aab8-aaf5010a8d0a">Video</a>
+              href="https://wgu.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=11fb791d-8c05-4140-aab8-aaf5010a8d0a" target="myFrame">Video</a>
           </td>
         </tr>
         <tr>
@@ -98,7 +71,7 @@
           <td><a style="text-decoration: underline;"
               href="https://westerngovernorsuniversity-my.sharepoint.com/:p:/g/personal/william_sewell_wgu_edu/EdE37s4lg-RPoE58CHwzUKoBearjU_IB_JYs4fos2gN_6w?e=avcK8Y">Powerpoint</a>
             / <a style="text-decoration: underline;"
-              href="https://wgu.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=78998aa5-3ad4-476c-8fd8-ab100126f88a">Video</a>
+              href="https://wgu.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=78998aa5-3ad4-476c-8fd8-ab100126f88a" target="myFrame">Video</a>
           </td>
         </tr>
         <tr>
@@ -106,7 +79,7 @@
           <td><a style="text-decoration: underline;"
               href="https://westerngovernorsuniversity-my.sharepoint.com/:p:/g/personal/william_sewell_wgu_edu/EVXdnAQ3XTVCmJO1xqWWcJoB1emN3ecqifl9d4Qz3DZT4A?e=BwmOV4">Powerpoint</a>
             / <a style="text-decoration: underline;"
-              href="https://wgu.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=efddebc3-b36b-4d45-941e-ab3201721432">Video</a>
+              href="https://wgu.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=efddebc3-b36b-4d45-941e-ab3201721432" target="myFrame">Video</a>
           </td>
         </tr>
         <tr>
@@ -114,7 +87,7 @@
           <td><a style="text-decoration: underline;"
               href="https://westerngovernorsuniversity-my.sharepoint.com/:p:/g/personal/william_sewell_wgu_edu/EZkjP9TNGzFBiHIWQ1bEDU4BeNfTFDLE4SvCVd5fwEitvQ?e=tsIHn8">Powerpoint</a>
             / <a style="text-decoration: underline;"
-              href="https://wgu.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=3e655ef3-0797-4c56-ab83-a9ca00d29ced">Video</a>
+              href="https://wgu.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=3e655ef3-0797-4c56-ab83-a9ca00d29ced" target="myFrame">Video</a>
           </td>
         </tr>
         <tr>
@@ -122,7 +95,7 @@
           <td><a style="text-decoration: underline;"
               href="https://westerngovernorsuniversity-my.sharepoint.com/:p:/g/personal/william_sewell_wgu_edu/ERD1dA9x9sFEoR16_yaONgcBQIZK_VdeLJiGYD8X0V1t8Q?e=sd7tQN">Powerpoint</a>
             / <a style="text-decoration: underline;"
-              href="https://wgu.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=dfc2da98-5ac7-47b7-a972-a9e300d8f274">Video</a>
+              href="https://wgu.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=dfc2da98-5ac7-47b7-a972-a9e300d8f274" target="myFrame">Video</a>
           </td>
         </tr>
         <tr>
@@ -130,7 +103,7 @@
           <td><a style="text-decoration: underline;"
               href="https://westerngovernorsuniversity-my.sharepoint.com/:p:/g/personal/william_sewell_wgu_edu/ETw4gkuC11xMokcquqKlQS4BYGTiSyfTLwFj2cA99soSzQ?e=Wp1DN8">Powerpoint</a>
             / <a style="text-decoration: underline;"
-              href="https://wgu.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=bf129922-4596-49e6-8956-a9fe01503d5c">Video</a>
+              href="https://wgu.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=bf129922-4596-49e6-8956-a9fe01503d5c" target="myFrame">Video</a>
           </td>
         </tr>
         <tr>
@@ -138,13 +111,13 @@
           <td><a style="text-decoration: underline;"
               href="https://westerngovernorsuniversity-my.sharepoint.com/:p:/g/personal/william_sewell_wgu_edu/EV18W6D_LvNIvTXyJGssUoQBn5LCaTBvkIrx9yhmYM9hwQ?e=qj9rZ8">Powerpoint</a>
             / <a style="text-decoration: underline;"
-              href="https://wgu.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=08dff7f1-75a8-47df-a720-aa3800ca9783">Video</a>
+              href="https://wgu.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=08dff7f1-75a8-47df-a720-aa3800ca9783" target="myFrame">Video</a>
           </td>
         </tr>
         <tr>
           <td>Correlation</td>
           <td><a style="text-decoration: underline;" href="">Powerpoint</a> / <a style="text-decoration: underline;"
-              href="https://wgu.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=69b4f35d-0368-4c02-b62d-aa6701721a83">Video</a>
+              href="https://wgu.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=69b4f35d-0368-4c02-b62d-aa6701721a83" target="myFrame">Video</a>
           </td>
         </tr>
         <tr>
@@ -152,7 +125,7 @@
           <td><a style="text-decoration: underline;"
               href="https://westerngovernorsuniversity-my.sharepoint.com/:p:/g/personal/william_sewell_wgu_edu/EUYZF819XSRHl2I6ZgboUCcBuFDBpL-syhm7syquU_lWjA?e=q5MtQ7">Powerpoint</a>
             / <a style="text-decoration: underline;"
-              href="https://wgu.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=67463450-723a-44d6-a9af-aa8301612a2b">Video</a>
+              href="https://wgu.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=67463450-723a-44d6-a9af-aa8301612a2b" target="myFrame">Video</a>
           </td>
         </tr>
         <tr>
@@ -160,20 +133,25 @@
           <td><a style="text-decoration: underline;"
               href="https://westerngovernorsuniversity-my.sharepoint.com/:p:/g/personal/william_sewell_wgu_edu/EW_DB0c0FFFGoaZh1wPgLxYB9DAMZzo6ObD_Klqar1053A?e=iLoen9">Powerpoint</a>
             / <a style="text-decoration: underline;"
-              href="https://wgu.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=bb2305b6-b4c8-4dd0-b1ba-aaa6016ef430">Video</a>
+              href="https://wgu.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=bb2305b6-b4c8-4dd0-b1ba-aaa6016ef430" target="myFrame">Video</a>
           </td>
         </tr>
         <tr>
           <td>Introduction to Chi-Square</td>
           <td><a style="text-decoration: underline;"
               href="https://westerngovernorsuniversity-my.sharepoint.com/:p:/g/personal/william_sewell_wgu_edu/EbnJhRb_VHdLigWoGxZuq9oBoY8W3jKnY-eXqBVkt4YXqA?e=jde9Ey">Powerpoint</a>
-            / <a style="text-decoration: underline;"
-              href="https://wgu.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=9fe32bb9-0919-4f99-8e68-aade012a2465">Video</a>
+            / <a style="text-decoration: underline;" 
+              href="https://wgu.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=9fe32bb9-0919-4f99-8e68-aade012a2465" target="myFrame">Video</a>
           </td>
         </tr>
       </tbody>
     </table>
+    <div>
+      <iframe id="videos" src="placeholder.html" name="myFrame" height="600" width="1200" ></iframe>
+    </div>
     </main>
+
+
   </body>
 
 </html>

@@ -1,45 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="/css/page.css">
-  <link rel="stylesheet" type="text/css"
-    href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.0/slate/bootstrap.min.css" />
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
-  </script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
-  </script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+<head id="header">
+  <script src="//code.jquery.com/jquery.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <script>
+    $.get("templates/header.html", function(data){
+      $("#header").replaceWith(data);
+    });  
   </script>
   <title>Disclosures</title>
 </head>
 
 <body>
-  <nav class="navbar navbar-expand navbar-dark bg-dark">
-    <div class="">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="index.html">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="models.html">Models</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="resource.html">Student Resources</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active" href="disclosure.html">Disclosures</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
+  <div id="nav-placeholder"></div>
 
   <br />
+
   <main role="main" class="container">
     <h3>All relevant disclosure information.</h3> <br />
     <p>All Khan Academy content is available for free at (<a class="link"
