@@ -2,25 +2,55 @@
 <html lang="en">
 
 <head id="header">
- <script src="//code.jquery.com/jquery.min.js"></script>
- <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-  <script>
-    $.get("templates/header.html", function(data){
-      $("#header").replaceWith(data);
-    });  
-  </script>
-  <title>Models</title>
+	<link rel="icon" type="image/png" href="favicon.ico">
+	<link rel="stylesheet" type="text/css" href="/css/page.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<script src="//code.jquery.com/jquery.min.js">
+	</script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+	 crossorigin="anonymous">
+
+	</script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+	 crossorigin="anonymous">
+
+	</script>
+	<script>
+		$.get("templates/navbar.html", function(data){
+      $("#nav-placeholder").replaceWith(data);
+    });
+	</script>
+	<script type="text/x-mathjax-config">MathJax.Hub.Config({ tex2jax: { inlineMath: [['$','$'], ['\\(','\\)']] } });</script>
+	<script type="text/x-mathjax-config">MathJax.Hub.Config({ TeX: { extensions: ["autobold.js", "AMSsymbols.js"] } });</script>
+	<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+
+	</script>
+	<title>Models</title>
 </head>
 
 <body>
-  <div id="nav-placeholder"></div>
-  
-  <br />
+		<div id="nav-placeholder"></div>
+
+		<br />
   
   <main role="main" class="container">
-  <ul class="list-group">
-    <li class="list-group-item"><a href="models/binomial.html">Binomial Distribution</a></li>
-  </ul>
+    <table>
+      <tbody>
+        <tr>
+          <td><a role="button" class="btn btn-primary" href="models/wilcoxon.html" target="myframe">Wilcoxon</a></td>
+          <td rowspan="8"><iframe name="myframe" src="resources/placeholder.html" height="800" width="800" frameborder="0"></iframe>      </td>
+        </tr>
+        <tr>
+          <td><a role="button" class="btn btn-primary" href="models/kruskal.html" target="myframe">Kruskal-Wallis</a></td>
+        </tr>
+        <tr>
+          <td><a role="button" class="btn btn-primary" href="models/binomial.html" target="myframe">Binomial</a></td>
+        </tr>
+        <tr>
+          <td><a role="button" class="btn btn-primary" href="models/1sampttest.html" target="myframe">One Sample T-Test</a></td>
+        </tr>
+      </tbody>
+    </table>
   </main>
 </body>
 

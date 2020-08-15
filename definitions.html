@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head id="header">
+  <script src="//code.jquery.com/jquery.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <script>
+    $.get("templates/header.html", function(data){
+      $("#header").replaceWith(data);
+    });  
+  </script>
+  <title>Disclosures</title>
+</head>
+
+<body>
+  <div id="nav-placeholder"></div>
+
+  <br />
+
+  <main role="main" class="container">
+        <table class="table table-sm table-dark table-striped table-bordered table-hover">
+          <thead>
+            <tr>
+              <td>Term</td>
+              <td>Definition</td>
+              <td>Example</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr">
+              <td>Random Variables</td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Random Variable</td>
+              <td>A rule that assigns a number to every outcome in the sample space of an experiment.</td>
+              <td>In a coin toss experiment, a random variable may assign 1 to heads and 0 to tails.</td>
+            </tr>
+            <tr>
+              <td>Discrete Random Variable</td>
+              <td>A random variable with a countable number or distinct values.</td>
+              <td>All integers between 0 and 100.</td>
+            </tr>
+            <tr>
+              <td>Continuous Random Variable</td>
+              <td>A random variable representing any value with a range of values.</td>
+              <td>All real numbers between 0 and 100.</td>
+            </tr>
+            <tr>
+              <td>Distributions</td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Probability Mass Function (pmf)</td>
+              <td>Assigns the probability that a discrete random variable is exactly equal to some value.</td>
+              <td> In recent years, 2% of the adult population of the U.S. is classified as underweight, 27% as normal
+                weight, 33% as overweight, and 38% as obese. The pmf of W is then p(W=0) = 0.02, p(W=1) = 0.27, p(W=2) =
+                0.33 and p(W=3) = 0.38. The probabilities assigned in a pmf are between 0 and 1, and the total
+                probability must sum to 1. </td>
+            </tr>
+            <tr>
+              <td>Cumulative Distribution Function (cdf)</td>
+              <td>The probability that for any number x, the observed value of the random variable will be at most x or
+                p(X&le;x)</td>
+              <td>When a fair die is rolled and the value facing up recorded, the cdf describes the probability of
+                getting less than or equal to any value x, such as the probability X is less than or equal to 3; p(X ≤
+                3) = p(1) + p(2) + p(3).</td>
+            </tr>
+            <tr>
+              <td>Probability Density Function (pdf)</td>
+              <td>Describes the likelihood of all values for a continuous random variable</td>
+              <td>The amount of time for Casey to do his chores is a random variable, X, where all values between 1 hour
+                and 2 hours are equally likely.</td>
+            </tr>
+            <tr>
+              <td>Binomial Distribution</td>
+              <td>Models how many times an event occurs in a certain number of trials.</td>
+              <td>A basketball player is fouled 3 on a 3 point shot attempt and awarded 3 free throws. This models the
+                number of free throws the player makes.</td>
+            </tr>
+
+          </tbody>
+        </table>
+      </main>
+</body>
+</html>
