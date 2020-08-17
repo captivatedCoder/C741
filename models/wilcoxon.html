@@ -13,91 +13,91 @@
 </head>
 
 <body>
-<table class="table table-sm table-striped table-bordered table-dark">
-            <tr>
-              <td>Name</td>
-              <td>Wilcoxon Rank Sum Test / Mann-Whitney Test</td>
-            </tr>
-            <tr>
-              <td>Definition</td>
-              <td>The Wilcoxon rank sum test is a nonparametric approach to establishing significant difference between two sample groups using magnitude-based ranks.</td>
-            </tr>
-            <tr>
-              <td>Hypotheses</td>
-              <td>
-                \( H_0 : \mu = \mu_0 \)
-                <br />
-                \( H_a : \mu \ne \mu_0 \)
+  <table class="table table-sm table-striped table-bordered table-dark">
+    <tr>
+      <td>Name</td>
+      <td>Wilcoxon Rank Sum Test / Mann-Whitney Test</td>
+    </tr>
+    <tr>
+      <td>Definition</td>
+      <td>The Wilcoxon rank sum test is a nonparametric approach to establishing significant difference between two sample groups using magnitude-based ranks.</td>
+    </tr>
+    <tr>
+      <td>Hypotheses</td>
+      <td>
+        \( H_0 : \mu = \mu_0 \)
+        <br />
+        \( H_a : \mu \ne \mu_0 \)
 
-              </td>
-            </tr>
-            <tr>
-              <td>Formulas</td>
-              <td>
-                Mean \( \mu_w \) = \( n_1(n_1+n_2+1) \over 2 \)
-                <br /><br />
-                Std Dev 
-                <math>
-                  <msub>
-                    <mi>&sigma;</mi>
-                    <mn>w</mn>
-                  </msub>
-                  <mo>=</mo>
-                  <msqrt>
-                    <mfrac>
-                      <mrow>
-                        <msub><mi>n</mi><mn>1</mn></msub>
-                        <msub><mi>n</mi><mn>2</mn></msub>
-                        <mo>(</mo>
-                        <msub><mi>n</mi><mn>1</mn></msub>
-                        <mo>+</mo>
-                        <msub><mi>n</mi><mn>2</mn></msub>
-                        <mo>+</mo>
-                        <mn>1</mn>
-                        <mo>)</mo>
-                      </mrow>
-                      <mn>12</mn>
-                     </mfrac>
-                  </msqrt>
-                <math>
-              </td>
-            </tr>
-            <tr>
-              <td>Input Values</td>
-              <td>
-                Categorical (can be quantitative data or ordinal data as it will be converted to categorical)
-                <br />
-                \( \mu_w \) 
-                \( \sigma_w \)
-              </td>
-            </tr>
-            <tr>
-              <td>Output Values</td>
-              <td>z value - The difference between the groups divided by the standard deviation.  A negative z-score would  indicate a statistically significant difference between the group means.
-                <br />
-                p-value - NORM.S.DIST function in Excel.  Value from the normal distribution table, cumulative.
-              </td>
-            </tr>
-            <tr>
-              <td>Interpretation of Output</td>
-              <td>
-                If p-value < &alpha; reject \( H_0 \)
-                <br />
-                If one median value is smaller or larger reject the null hypothesis.</td>
-            </tr>
-            <tr>
-              <td>Value of the Method</td>
-              <td>Allows for comparison of two populations with distributions that are not normal but have a similar shape.  Converts the data into ranks so it can use quantitative or ordinal data.  Compares the median of the populations rather than the mean.</td>
-            </tr>
-            <tr>
-              <td>Example</td>
-              <td>
-                10 people were asked to review two stores (5 at each store).  There were 5 criteria (Cleanliness, Service, Facilities, Drink Quality, and Food Quality) and a scale of 1-5 (lowest possible score 5, highest possible score 25). 
-                <br />
-                Place samples in two columns.  Stack both columns in third, rank this column in the fourth column.  Sum the ranks.  Use sampling dist and test statistic to find p, test p to alpha level
-              </td>
-            </tr>
-          </table>
-  
+      </td>
+    </tr>
+    <tr>
+      <td>Formulas</td>
+      <td>
+        Mean \( \mu_w \) = \( n_1(n_1+n_2+1) \over 2 \)
+        <br /><br />
+        Std Dev 
+        <math>
+          <msub>
+            <mi>&sigma;</mi>
+            <mn>w</mn>
+          </msub>
+          <mo>=</mo>
+          <msqrt>
+            <mfrac>
+              <mrow>
+                <msub><mi>n</mi><mn>1</mn></msub>
+                <msub><mi>n</mi><mn>2</mn></msub>
+                <mo>(</mo>
+                <msub><mi>n</mi><mn>1</mn></msub>
+                <mo>+</mo>
+                <msub><mi>n</mi><mn>2</mn></msub>
+                <mo>+</mo>
+                <mn>1</mn>
+                <mo>)</mo>
+              </mrow>
+              <mn>12</mn>
+              </mfrac>
+          </msqrt>
+        <math>
+      </td>
+    </tr>
+    <tr>
+      <td>Input Values</td>
+      <td>
+        Categorical (can be quantitative data or ordinal data as it will be converted to categorical)
+        <br />
+        \( \mu_w \) 
+        \( \sigma_w \)
+      </td>
+    </tr>
+    <tr>
+      <td>Output Values</td>
+      <td>z value - The difference between the groups divided by the standard deviation.  A negative z-score would  indicate a statistically significant difference between the group means.
+        <br />
+        p-value - NORM.S.DIST function in Excel.  Value from the normal distribution table, cumulative.
+      </td>
+    </tr>
+    <tr>
+      <td>Interpretation of Output</td>
+      <td>
+        If p-value < &alpha; reject \( H_0 \)
+        <br />
+        If one median value is smaller or larger reject the null hypothesis.</td>
+    </tr>
+    <tr>
+      <td>Value of the Method</td>
+      <td>Allows for comparison of two populations with distributions that are not normal but have a similar shape.  Converts the data into ranks so it can use quantitative or ordinal data.  Compares the median of the populations rather than the mean.</td>
+    </tr>
+    <tr>
+      <td>Example</td>
+      <td>
+        10 people were asked to review two stores (5 at each store).  There were 5 criteria (Cleanliness, Service, Facilities, Drink Quality, and Food Quality) and a scale of 1-5 (lowest possible score 5, highest possible score 25). 
+        <br />
+        Place samples in two columns.  Stack both columns in third, rank this column in the fourth column.  Sum the ranks.  Use sampling dist and test statistic to find p, test p to alpha level
+      </td>
+    </tr>
+  </table>
 </body>
+
 </html>

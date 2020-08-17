@@ -10,74 +10,76 @@
   <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
   <title>Kruskal-Wallis</title>
 </head>
+
 <body>
   <table class="table table-sm table-striped table-bordered table-dark">
-            <tr>
-              <td>Name</td>
-              <td>Kruskal Wallis</td>
-            </tr>
-            <tr>
-              <td>Definition</td>
-              <td>
-                A nonparametric test that compares more than two non-normally distributed populations using rank sum.  Alternate to the ANOVA
-              </td>
-            </tr>
-            <tr>
-              <td>Hypothese</td>
-              <td>
-                \( H_0 \): All populations are the same
-                <br />
-                \( H_a \): All populations are not the same
-              </td>
-            </tr>
-            <tr>
-              <td>Formula</td>
-              <td>
-                <math>
-                  <mi>H</mi><mo>=</mo>
-                  <mfrac><mrow><mn>12</mn></mrow>
-                  <mrow><mn>N</mn><mo>(</mo><mn>N</mn><mo>+</mo><mi>1</mi><mo>)</mo></mrow></mfrac>
-                  <mi>&Sigma;</mi>
-                  <mfrac>
-                    <mrow><msubsup><mi>R</mi><mi>i</mi><mn>2</mn></msubsup></mrow>
-                    <mrow><msub><mi>n</mi><mi>i</mi></msub></mrow>
-                  </mfrac>
-                  <mo>-</mo>
-                  <mn>3</mn><mo>(</mo><mi>N</mi><mo>+</mo><mn>1</mn><mo>)</mo>
-                </math>
-              </td>
-            </tr>
-            <tr>
-              <td>Input Values</td>
-              <td>
-                N - total observations in all samples
-                <br />
-                \( R_i \) - sum of all ranks for each sample (i)
-                <br />
-                \( n_i \) - number of observations in each sample (i)
-              </td>
-            </tr>
-            <tr>
-              <td>Output Values</td>
-              <td>
-                Test-Statistic - \( H > \chi^2_a, k-1 \) <br />
-                P-Value - \( P(\chi^2 > H)\)
-              </td>
-            </tr>
-            <tr>
-              <td>Interpretation of Output</td>
-              <td>If the Chi-squared value is less than the H value then reject the null hypothesis</td>
-            </tr>
-            <tr>
-              <td>Value of the Method</td>
-              <td>
-                Can be used in place of ANOVA when the data does not fit a normal distribution.  Accepts quantitative or qualitative data since all data is converted to ranks.  While data does not need to be normally distributed, it does need to be the same shape and have equivalent variance.
-              </td>
-            </tr>
-            <tr>
-              <td>Example</td>
-              <td>45 people are surveyed about 3 stores (15 per store).  Asked to rate 5 categories on a scale of 1-5.  Steps are similar to Wilcoxon until finding the chi-square value.</td>
-            </tr>
-          </table>
+    <tr>
+      <td>Name</td>
+      <td>Kruskal Wallis</td>
+    </tr>
+    <tr>
+      <td>Definition</td>
+      <td>
+        A nonparametric test that compares more than two non-normally distributed populations using rank sum.  Alternate to the ANOVA
+      </td>
+    </tr>
+    <tr>
+      <td>Hypothese</td>
+      <td>
+        \( H_0 \): All populations are the same
+        <br />
+        \( H_a \): All populations are not the same
+      </td>
+    </tr>
+    <tr>
+      <td>Formula</td>
+      <td>
+        <math>
+          <mi>H</mi><mo>=</mo>
+          <mfrac><mrow><mn>12</mn></mrow>
+          <mrow><mn>N</mn><mo>(</mo><mn>N</mn><mo>+</mo><mi>1</mi><mo>)</mo></mrow></mfrac>
+          <mi>&Sigma;</mi>
+          <mfrac>
+            <mrow><msubsup><mi>R</mi><mi>i</mi><mn>2</mn></msubsup></mrow>
+            <mrow><msub><mi>n</mi><mi>i</mi></msub></mrow>
+          </mfrac>
+          <mo>-</mo>
+          <mn>3</mn><mo>(</mo><mi>N</mi><mo>+</mo><mn>1</mn><mo>)</mo>
+        </math>
+      </td>
+    </tr>
+    <tr>
+      <td>Input Values</td>
+      <td>
+        N - total observations in all samples
+        <br />
+        \( R_i \) - sum of all ranks for each sample (i)
+        <br />
+        \( n_i \) - number of observations in each sample (i)
+      </td>
+    </tr>
+    <tr>
+      <td>Output Values</td>
+      <td>
+        Test-Statistic - \( H > \chi^2_a, k-1 \) <br />
+        P-Value - \( P(\chi^2 > H)\)
+      </td>
+    </tr>
+    <tr>
+      <td>Interpretation of Output</td>
+      <td>If the Chi-squared value is less than the H value then reject the null hypothesis</td>
+    </tr>
+    <tr>
+      <td>Value of the Method</td>
+      <td>
+        Can be used in place of ANOVA when the data does not fit a normal distribution.  Accepts quantitative or qualitative data since all data is converted to ranks.  While data does not need to be normally distributed, it does need to be the same shape and have equivalent variance.
+      </td>
+    </tr>
+    <tr>
+      <td>Example</td>
+      <td>45 people are surveyed about 3 stores (15 per store).  Asked to rate 5 categories on a scale of 1-5.  Steps are similar to Wilcoxon until finding the chi-square value.</td>
+    </tr>
+  </table>
 </body>
+
 </html>
