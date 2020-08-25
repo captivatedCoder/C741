@@ -2,24 +2,66 @@
 <html lang="en">
 
 <head id="header">
-  <script src="//code.jquery.com/jquery.min.js"></script>
-  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-  <script>
-      $.get("templates/header.html", function(data){
+	<script src="//code.jquery.com/jquery.min.js">
+	</script>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<script>
+		$.get("templates/header.html", function(data){
         $("#header").replaceWith(data);
-      });  
-  </script>
-   
+      });
+	</script>
+
 	<title>My Bits</title>
 </head>
 
-	<body>
-		<div id="nav-placeholder"></div>
+<body>
+	<div id="nav-placeholder"></div>
 
-		<br />
+	<br />
 
     <main role="main" class="container">
-      <h4>This is a collection of notes and links that I found interesting or useful.</h4>
+      <h4>This is a collection of things that I found interesting or useful.</h4>
+      <br />
+
+      <table class="table table-striped table-bordered table-dark">
+        <caption><strong style="color:cornflowerblue">If X is continuous and Y is continuous use Correlation and Simple Linear Regression <br />
+        If X is continuous and Y is discrete use Logistic Regression</strong></caption>
+        <tbody>
+          <tr>
+            <td rowspan="5" style="padding-top:100px;padding-bottom:100px;">Y</td>
+            <td colspan="2"></td>
+            <td>1 to Standard</td>
+            <td>1 to 1</td>
+            <td>Multiple</td>
+          </tr>
+          <tr>
+            <td rowspan="3" style="padding-top:50px;padding-bottom:50px;">Continuous</td>
+            <td>Mean</td>
+            <td>1-Sample T Test</td>
+            <td>2-Sample T Test</td>
+            <td>One Way ANOVA</td>
+          </tr>
+          <tr>
+            <td>Median</td>
+            <td>Wilcoxon</td>
+            <td>Mann-Whitney</td>
+            <td>Kruskal-Wallis</td>
+          </tr>
+          <tr>
+            <td>Standard Deviation</td>
+            <td>1 Variance Test</td>
+            <td>2 Variance Test</td>
+            <td>Bartlett/td>
+          </tr>
+          <tr>
+            <td>Discrete</td>
+            <td>Proportions</td>
+            <td>1 Proportion Test</td>
+            <td>2 Proportion Test</td>
+            <td>Chi-Square Test</td>
+          </tr>
+        </tbody>
+      </table>
       <br />
       <table class="table table-sm table-dark table-striped table-bordered table-hover">
         <caption><strong style="color:cornflowerblue">Parametric vs Nonparametric Tests</strong></caption>
